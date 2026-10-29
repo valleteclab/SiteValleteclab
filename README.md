@@ -68,3 +68,10 @@ Qualquer hospedagem estática funciona. No GitHub Pages: Settings > Pages > Bran
 
 O repositório inclui um `Dockerfile` (servidor Caddy) e um `railway.json`. No Railway, basta criar um
 serviço apontando para este repositório; a porta é lida da variável `PORT` automaticamente.
+
+## Cartão digital
+
+- Página: `cartao.html` (link em `/cartao.html` no site publicado), com botões de WhatsApp, ligar, e-mail,
+  salvar contato (arquivo `assets/lj-servicos.vcf`), mapa e compartilhar.
+- Imagem para enviar no WhatsApp: `assets/brand/cartao-lj-servicos.png` (1080x1350), com QR code para a página.
+- Para alterar telefone, e-mail ou endereço do cartão, edite `cartao.html` e `assets/lj-servicos.vcf`.

@@ -1,7 +1,7 @@
 # Servidor estático leve para publicar o site (Railway, Fly, Docker etc.)
 FROM caddy:2-alpine
 WORKDIR /srv
-COPY index.html ./
+COPY index.html cartao.html ./
 COPY css ./css
 COPY js ./js
 COPY assets ./assets
