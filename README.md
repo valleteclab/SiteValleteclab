@@ -48,10 +48,10 @@ reservado no lugar, sem quebrar o layout.
 | `assets/img/servicos/montagem-silos.jpg` | Card do serviço | Silos, unidade armazenadora, montagem. |
 | `assets/img/servicos/manutencao-industrial.jpg` | Card do serviço | Silos, elevadores, esteiras. |
 | `assets/img/servicos/fabricacao-montagem.jpg` | Card do serviço | Solda, caldeiraria, montagem de estrutura. |
-| `assets/img/servicos/manutencao-eletrica.jpg` | Card do serviço | Painel elétrico, motor, CCM. |
+| `assets/img/servicos/manutencao-eletrica.jpg` | Card do serviço | Painéis elétricos. |
 | `assets/img/servicos/usina-solar.jpg` | Card do serviço | Placas solares instaladas. |
 | `assets/img/servicos/engenharia-civil.jpg` | Card do serviço | Base de silo, galpão, obra. |
-| `assets/img/portfolio/01.jpg` a `12.jpg` | Galeria "Projetos realizados" | 12 fotos de trabalhos. As legendas estão em `index.html` e podem ser trocadas. |
+| `assets/img/portfolio/01.jpg` a `13.jpg` | Galeria "Projetos realizados" | 13 fotos de trabalhos. As legendas estão em `index.html` e podem ser trocadas. |
 | `assets/img/clientes/*.png` | Carrossel de clientes | Logos com fundo branco, cerca de 160px de altura. Os clientes sem logo aparecem em texto; para adicionar um logo, troque o item em `index.html`. |
 | `assets/img/og-image.jpg` | Prévia ao compartilhar o link no WhatsApp/redes | 1200x630px. |
 
