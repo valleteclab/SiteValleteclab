@@ -50,7 +50,7 @@ reservado no lugar, sem quebrar o layout.
 | `assets/img/servicos/manutencao-eletrica.jpg` | Card do serviço | Painel elétrico, motor, CCM. |
 | `assets/img/servicos/usina-solar.jpg` | Card do serviço | Placas solares instaladas. |
 | `assets/img/servicos/engenharia-civil.jpg` | Card do serviço | Base de silo, galpão, obra. |
-| `assets/img/portfolio/01.jpg` a `08.jpg` | Galeria "Projetos realizados" | 8 fotos de trabalhos. As legendas estão em `index.html` e podem ser trocadas. |
+| `assets/img/portfolio/01.jpg` a `07.jpg` | Galeria "Projetos realizados" | 7 fotos de trabalhos. As legendas estão em `index.html` e podem ser trocadas. |
 | `assets/img/og-image.jpg` | Prévia ao compartilhar o link no WhatsApp/redes | 1200x630px. |
 
 Para adicionar mais fotos na galeria, copie um bloco `<figure class="portfolio__item">` em `index.html`.
