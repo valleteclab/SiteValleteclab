@@ -59,3 +59,8 @@ Para adicionar mais fotos na galeria, copie um bloco `<figure class="portfolio__
 ## 3. Publicar
 
 Qualquer hospedagem estática funciona. No GitHub Pages: Settings > Pages > Branch `main` > pasta `/ (root)`.
+
+### Railway / Docker
+
+O repositório inclui um `Dockerfile` (servidor Caddy) e um `railway.json`. No Railway, basta criar um
+serviço apontando para este repositório; a porta é lida da variável `PORT` automaticamente.
