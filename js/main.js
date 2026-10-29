@@ -7,7 +7,7 @@ const CONFIG = {
   whatsappNumber: "5577998755764",
   // Como o número aparece no site
   whatsappDisplay: "(77) 99875-5764",
-  email: "contato@valleteclab.com.br",
+  email: "loamesilva@valleteclab.com.br",
   region: "Atendemos todo o Brasil",
   defaultMessage: "Olá! Vim pelo site da Valleteclab e gostaria de solicitar um orçamento."
 };

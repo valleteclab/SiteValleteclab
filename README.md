@@ -24,7 +24,7 @@ Edite o bloco `CONFIG` no início de `js/main.js`:
 const CONFIG = {
   whatsappNumber: "5566999998888",     // DDI + DDD + número, só dígitos
   whatsappDisplay: "(66) 99999-8888",  // como aparece no site
-  email: "contato@valleteclab.com.br",
+  email: "loamesilva@valleteclab.com.br",
   region: "Atendemos todo o Brasil",
   ...
 };
