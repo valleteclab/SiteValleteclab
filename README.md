@@ -33,14 +33,16 @@ const CONFIG = {
 Todos os botões "WhatsApp" e o formulário de contato usam esse número. O formulário monta a
 mensagem e abre o WhatsApp com ela pronta, sem precisar de servidor.
 
-## 2. Adicionar as fotos
+## 2. Fotos
 
-Coloque as fotos nos caminhos abaixo (JPG, idealmente até 300 KB cada). Enquanto uma foto não
-existir, o site mostra um espaço reservado com o nome do que vai ali, sem quebrar o layout.
+As fotos já estão no site, otimizadas para web, nos caminhos abaixo. Os arquivos originais
+(em alta resolução) ficam em `fotos-originais/`. Para trocar uma foto, basta substituir o arquivo
+de mesmo nome (JPG, idealmente até 300 KB). Se uma foto for removida, o site mostra um espaço
+reservado no lugar, sem quebrar o layout.
 
 | Arquivo | Onde aparece | Sugestão |
 |---|---|---|
-| `assets/img/logo.png` | Cabeçalho | Logo em PNG com fundo transparente. Se não existir, aparece o nome em texto. |
+| `assets/img/logo-white-header.png` | Cabeçalho e rodapé | Logo em branco para fundo escuro. `logo.png` é a versão original e `logo-white.png` a branca em alta resolução. |
 | `assets/img/hero.jpg` | Fundo da primeira dobra | Foto panorâmica de armazém, silos ou equipe em campo (horizontal, 1920px). |
 | `assets/img/equipe.jpg` | Seção "Quem somos" | Equipe ou o líder técnico em campo (vertical ou quadrada). |
 | `assets/img/servicos/manutencao-industrial.jpg` | Card do serviço | Silos, elevadores, esteiras. |
