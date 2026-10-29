@@ -2,18 +2,20 @@
    Valleteclab - Landing Page
    ========================================================= */
 :root {
-  --c-bg: #0f1419;
-  --c-bg-2: #161d24;
-  --c-bg-3: #1f2932;
+  --c-bg: #0d1b24;
+  --c-bg-2: #13252f;
+  --c-bg-3: #1b2f3b;
   --c-surface: #ffffff;
   --c-surface-2: #f4f6f8;
   --c-text: #1b2330;
   --c-text-muted: #5b6775;
   --c-text-inv: #f5f7fa;
   --c-text-inv-muted: #b4bec9;
-  --c-primary: #f28c1e;      /* laranja industrial */
-  --c-primary-dark: #d4730f;
-  --c-accent: #3f9b45;       /* verde agro */
+  --c-primary: #f6c700;      /* amarelo do logo */
+  --c-primary-dark: #d9a800;
+  --c-red: #e3261c;          /* vermelho do logo */
+  --c-blue: #1a8ad4;         /* azul do logo */
+  --c-accent: #1a8ad4;       /* azul do logo */
   --c-line: #e3e8ee;
   --c-line-dark: rgba(255,255,255,.08);
   --radius: 14px;
@@ -70,8 +72,8 @@ p { margin: 0 0 1rem; }
   white-space: nowrap;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn--primary { background: var(--c-primary); color: #141414; box-shadow: 0 8px 20px rgba(242,140,30,.35); }
-.btn--primary:hover { background: #ff9d33; }
+.btn--primary { background: var(--c-primary); color: #141414; box-shadow: 0 8px 20px rgba(246,199,0,.35); }
+.btn--primary:hover { background: #ffd71a; }
 .btn--ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
 .btn--ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
 .btn--light { background: #fff; color: var(--c-text); }
@@ -88,7 +90,8 @@ p { margin: 0 0 1rem; }
 }
 .header__inner { height: var(--header-h); display: flex; align-items: center; gap: 2rem; }
 .logo { display: flex; align-items: center; gap: .6rem; }
-.logo__img { height: 44px; width: auto; }
+.logo__img { height: 42px; width: auto; display: none; }
+.logo.has-image .logo__img { display: block; }
 .logo__text { font-family: var(--font-display); font-weight: 800; font-size: 1.75rem; letter-spacing: .02em; color: #fff; }
 .logo__text span { color: var(--c-primary); }
 .logo.has-image .logo__text { display: none; }
@@ -111,8 +114,8 @@ p { margin: 0 0 1rem; }
 .hero {
   position: relative; color: #fff; overflow: hidden;
   background:
-    radial-gradient(ellipse at 20% 20%, rgba(242,140,30,.28), transparent 50%),
-    radial-gradient(ellipse at 85% 80%, rgba(63,155,69,.22), transparent 45%),
+    radial-gradient(ellipse at 20% 20%, rgba(246,199,0,.22), transparent 50%),
+    radial-gradient(ellipse at 85% 80%, rgba(26,138,212,.25), transparent 45%),
     linear-gradient(160deg, #141b22 0%, #0f1419 60%, #0b0f13 100%);
   min-height: calc(100vh - var(--header-h));
   display: flex; align-items: center;
@@ -164,7 +167,7 @@ p { margin: 0 0 1rem; }
 .service__body { padding: 1.5rem 1.5rem 1.7rem; display: flex; flex-direction: column; flex: 1; }
 .service__icon {
   width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center;
-  background: rgba(242,140,30,.12); color: var(--c-primary-dark); margin-bottom: 1rem;
+  background: rgba(26,138,212,.12); color: var(--c-blue); margin-bottom: 1rem;
 }
 .service__icon svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .service h3 { margin-bottom: .5rem; }
@@ -183,7 +186,7 @@ p { margin: 0 0 1rem; }
   background: #fff; border-radius: var(--radius); padding: 1.5rem; border: 1px solid var(--c-line);
   border-top: 4px solid var(--c-accent); transition: .2s;
 }
-.segment:hover { border-top-color: var(--c-primary); transform: translateY(-3px); box-shadow: var(--shadow); }
+.segment:hover { border-top-color: var(--c-red); transform: translateY(-3px); box-shadow: var(--shadow); }
 .segment > span { font-size: 1.9rem; display: block; margin-bottom: .6rem; }
 .segment h3 { font-size: 1.3rem; margin-bottom: .3rem; }
 .segment p { color: var(--c-text-muted); font-size: .92rem; margin: 0; }
@@ -195,7 +198,7 @@ p { margin: 0 0 1rem; }
 .about__body p { color: var(--c-text-muted); font-size: 1.03rem; }
 .about__body h2 { margin-bottom: 1.2rem; }
 .about__points { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.4rem; margin: 1.6rem 0 2rem; }
-.about__points li { display: flex; flex-direction: column; padding-left: 1rem; border-left: 3px solid var(--c-primary); }
+.about__points li { display: flex; flex-direction: column; padding-left: 1rem; border-left: 3px solid var(--c-blue); }
 .about__points strong { font-size: 1rem; }
 .about__points span { font-size: .9rem; color: var(--c-text-muted); }
 
@@ -241,7 +244,7 @@ p { margin: 0 0 1rem; }
 .portfolio__item.is-missing figcaption::before { margin: 0 0 .5rem; }
 
 /* ---------- Faixa CTA ---------- */
-.cta-band { background: linear-gradient(100deg, var(--c-primary-dark), var(--c-primary)); color: #141414; padding: 48px 0; }
+.cta-band { background: linear-gradient(100deg, #b71c14, var(--c-red)); color: #fff; padding: 48px 0; }
 .cta-band__inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
 .cta-band h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); }
 .cta-band p { margin: .4rem 0 0; font-weight: 500; }
@@ -263,7 +266,7 @@ p { margin: 0 0 1rem; }
   font: inherit; padding: .8rem .95rem; border-radius: 10px; border: 1px solid #cfd6de; background: #fff; color: var(--c-text);
   transition: border-color .15s, box-shadow .15s;
 }
-.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--c-primary); box-shadow: 0 0 0 3px rgba(242,140,30,.2); }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--c-primary); box-shadow: 0 0 0 3px rgba(246,199,0,.3); }
 .field input.is-invalid { border-color: #d64545; }
 .field textarea { resize: vertical; min-height: 110px; }
 .form__hint { font-size: .82rem; color: var(--c-text-muted); text-align: center; margin: .7rem 0 0; }
@@ -271,6 +274,7 @@ p { margin: 0 0 1rem; }
 /* ---------- Footer ---------- */
 .footer { background: var(--c-bg); color: var(--c-text-inv-muted); padding-top: 56px; }
 .footer__inner { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2rem; padding-bottom: 40px; border-bottom: 1px solid var(--c-line-dark); }
+.footer__logo { height: 46px; width: auto; }
 .footer__brand p { margin-top: .8rem; font-size: .95rem; max-width: 320px; }
 .footer__col { display: flex; flex-direction: column; gap: .5rem; }
 .footer__col h4 { color: #fff; font-size: 1.1rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .4rem; }
