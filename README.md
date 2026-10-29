@@ -36,7 +36,7 @@ mensagem e abre o WhatsApp com ela pronta, sem precisar de servidor.
 ## 2. Fotos
 
 As fotos já estão no site, otimizadas para web, nos caminhos abaixo. Os arquivos originais
-(em alta resolução) ficam em `fotos-originais/` e `fotos-originais/lote2/`. Para trocar uma foto, basta substituir o arquivo
+(em alta resolução) ficam em `fotos-originais/`, `fotos-originais/lote2/` e `fotos-originais/lote3/`. Para trocar uma foto, basta substituir o arquivo
 de mesmo nome (JPG, idealmente até 300 KB). Se uma foto for removida, o site mostra um espaço
 reservado no lugar, sem quebrar o layout.
 
@@ -45,6 +45,7 @@ reservado no lugar, sem quebrar o layout.
 | `assets/img/logo-white-header.png` | Cabeçalho e rodapé | Logo em branco para fundo escuro. `logo.png` é a versão original e `logo-white.png` a branca em alta resolução. |
 | `assets/img/hero.jpg` | Fundo da primeira dobra | Foto panorâmica de armazém, silos ou equipe em campo (horizontal, 1920px). |
 | `assets/img/equipe.jpg` | Seção "Quem somos" | Equipe ou o líder técnico em campo (vertical ou quadrada). |
+| `assets/img/servicos/montagem-silos.jpg` | Card do serviço | Silos, unidade armazenadora, montagem. |
 | `assets/img/servicos/manutencao-industrial.jpg` | Card do serviço | Silos, elevadores, esteiras. |
 | `assets/img/servicos/fabricacao-montagem.jpg` | Card do serviço | Solda, caldeiraria, montagem de estrutura. |
 | `assets/img/servicos/manutencao-eletrica.jpg` | Card do serviço | Painel elétrico, motor, CCM. |

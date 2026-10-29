@@ -174,7 +174,11 @@ p { margin: 0 0 1rem; }
 .service p { color: var(--c-text-muted); font-size: .97rem; flex: 1; }
 .service__tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .6rem; }
 .service__tags li { font-size: .78rem; font-weight: 600; padding: .25rem .6rem; border-radius: 999px; background: var(--c-surface-2); color: var(--c-text-muted); }
-.service--cta { background: linear-gradient(150deg, var(--c-bg-2), var(--c-bg)); color: #fff; border: 0; justify-content: center; }
+.service--cta { background: linear-gradient(150deg, var(--c-bg-2), var(--c-bg)); color: #fff; border: 0; justify-content: center; grid-column: 1 / -1; }
+.service--cta .service__body { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; column-gap: 2rem; align-items: center; padding: 2rem 2.2rem; }
+.service--cta h3 { grid-column: 1; }
+.service--cta p { grid-column: 1; margin: 0; }
+.service--cta .btn { grid-column: 2; grid-row: 1 / span 2; margin: 0; }
 .service--cta h3 { color: #fff; font-size: 1.8rem; }
 .service--cta p { color: var(--c-text-inv-muted); flex: 0; }
 .service--cta .btn { align-self: flex-start; margin-top: .6rem; }
@@ -325,6 +329,8 @@ p { margin: 0 0 1rem; }
 }
 @media (max-width: 640px) {
   .services__grid, .segments__grid, .process__steps { grid-template-columns: 1fr; }
+  .service--cta .service__body { grid-template-columns: 1fr; }
+  .service--cta .btn { grid-column: 1; grid-row: auto; margin-top: 1rem; justify-self: start; }
   .portfolio__grid { grid-template-columns: repeat(2, 1fr); }
   .contact__form { grid-template-columns: 1fr; }
   .about__points { grid-template-columns: 1fr; }
