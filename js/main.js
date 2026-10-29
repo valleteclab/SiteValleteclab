@@ -31,6 +31,17 @@ const CONFIG = {
   });
   document.querySelectorAll(".js-region").forEach((el) => (el.textContent = CONFIG.region));
 
+  /* ---- Carrossel de clientes: duplica os itens para o loop ser contínuo ---- */
+  document.querySelectorAll(".marquee__track").forEach((track) => {
+    const items = Array.from(track.children);
+    items.forEach((it) => {
+      const clone = it.cloneNode(true);
+      clone.classList.add("is-clone");
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    });
+  });
+
   /* ---- Ano no rodapé ---- */
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();

@@ -52,6 +52,7 @@ reservado no lugar, sem quebrar o layout.
 | `assets/img/servicos/usina-solar.jpg` | Card do serviço | Placas solares instaladas. |
 | `assets/img/servicos/engenharia-civil.jpg` | Card do serviço | Base de silo, galpão, obra. |
 | `assets/img/portfolio/01.jpg` a `12.jpg` | Galeria "Projetos realizados" | 12 fotos de trabalhos. As legendas estão em `index.html` e podem ser trocadas. |
+| `assets/img/clientes/*.png` | Carrossel de clientes | Logos com fundo branco, cerca de 160px de altura. Os clientes sem logo aparecem em texto; para adicionar um logo, troque o item em `index.html`. |
 | `assets/img/og-image.jpg` | Prévia ao compartilhar o link no WhatsApp/redes | 1200x630px. |
 
 Para adicionar mais fotos na galeria, copie um bloco `<figure class="portfolio__item">` em `index.html`.

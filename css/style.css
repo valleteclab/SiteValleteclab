@@ -142,15 +142,33 @@ p { margin: 0 0 1rem; }
 .hero__stats strong { font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: var(--c-primary); line-height: 1; }
 .hero__stats span { font-size: .9rem; color: var(--c-text-inv-muted); margin-top: .3rem; }
 
-/* ---------- Faixa de clientes ---------- */
-.trust { background: var(--c-bg-2); color: #fff; padding: 36px 0; border-top: 1px solid var(--c-line-dark); }
-.trust__title { text-align: center; color: var(--c-text-inv-muted); font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1.2rem; }
-.trust__list { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem 2.4rem; }
-.trust__list li {
-  font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; letter-spacing: .05em; text-transform: uppercase;
-  color: #e8edf2; opacity: .85; transition: .2s;
+/* ---------- Faixa de clientes (carrossel) ---------- */
+.trust { background: var(--c-bg-2); color: #fff; padding: 36px 0 32px; border-top: 1px solid var(--c-line-dark); }
+.trust__title { text-align: center; color: var(--c-text-inv-muted); font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1.4rem; }
+.marquee {
+  overflow: hidden; position: relative;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
-.trust__list li:hover { opacity: 1; color: var(--c-primary); }
+.marquee__track { display: flex; gap: 1.2rem; width: max-content; animation: marquee 38s linear infinite; }
+.marquee:hover .marquee__track { animation-play-state: paused; }
+.marquee__item {
+  flex: 0 0 auto; height: 84px; min-width: 150px; padding: 0 1.6rem;
+  background: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center;
+}
+.marquee__item img { height: 48px; width: auto; max-width: 180px; object-fit: contain; }
+.marquee__item--text { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; letter-spacing: .04em; text-transform: uppercase; color: var(--c-bg); white-space: nowrap; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; }
+  .marquee { mask-image: none; -webkit-mask-image: none; }
+  .marquee__track .marquee__item.is-clone { display: none; }
+}
+@media (max-width: 640px) {
+  .marquee__item { height: 68px; min-width: 120px; padding: 0 1.1rem; }
+  .marquee__item img { height: 38px; max-width: 140px; }
+  .marquee__item--text { font-size: 1.1rem; }
+}
 
 /* ---------- Serviços ---------- */
 .services { background: var(--c-surface); }
