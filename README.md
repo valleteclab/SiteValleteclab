@@ -36,7 +36,7 @@ mensagem e abre o WhatsApp com ela pronta, sem precisar de servidor.
 ## 2. Fotos
 
 As fotos já estão no site, otimizadas para web, nos caminhos abaixo. Os arquivos originais
-(em alta resolução) ficam em `fotos-originais/`. Para trocar uma foto, basta substituir o arquivo
+(em alta resolução) ficam em `fotos-originais/` e `fotos-originais/lote2/`. Para trocar uma foto, basta substituir o arquivo
 de mesmo nome (JPG, idealmente até 300 KB). Se uma foto for removida, o site mostra um espaço
 reservado no lugar, sem quebrar o layout.
 
@@ -50,7 +50,7 @@ reservado no lugar, sem quebrar o layout.
 | `assets/img/servicos/manutencao-eletrica.jpg` | Card do serviço | Painel elétrico, motor, CCM. |
 | `assets/img/servicos/usina-solar.jpg` | Card do serviço | Placas solares instaladas. |
 | `assets/img/servicos/engenharia-civil.jpg` | Card do serviço | Base de silo, galpão, obra. |
-| `assets/img/portfolio/01.jpg` a `07.jpg` | Galeria "Projetos realizados" | 7 fotos de trabalhos. As legendas estão em `index.html` e podem ser trocadas. |
+| `assets/img/portfolio/01.jpg` a `12.jpg` | Galeria "Projetos realizados" | 12 fotos de trabalhos. As legendas estão em `index.html` e podem ser trocadas. |
 | `assets/img/og-image.jpg` | Prévia ao compartilhar o link no WhatsApp/redes | 1200x630px. |
 
 Para adicionar mais fotos na galeria, copie um bloco `<figure class="portfolio__item">` em `index.html`.
