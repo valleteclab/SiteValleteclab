@@ -1,5 +1,5 @@
 /* =========================================================
-   LJ Serviços - Landing Page
+   Vale Engenharia e Manutenção Industrial - Landing Page
    Edite os dados de contato aqui:
    ========================================================= */
 const CONFIG = {
@@ -14,7 +14,7 @@ const CONFIG = {
   owner: "Francisco Almir Vale de Araújo",
   address: "Rua Cleriston Andrade, 1189, Sala 210, Luís Eduardo Magalhães - BA",
   region: "Base em Luís Eduardo Magalhães - BA. Atendemos todo o Brasil",
-  defaultMessage: "Olá! Vim pelo site da LJ Serviços e gostaria de solicitar um orçamento."
+  defaultMessage: "Olá! Vim pelo site da Vale Engenharia e gostaria de solicitar um orçamento."
 };
 
 (function () {
@@ -110,7 +110,7 @@ const CONFIG = {
       }
       const d = Object.fromEntries(new FormData(form).entries());
       const msg =
-        "Olá! Vim pelo site da LJ Serviços.\n\n" +
+        "Olá! Vim pelo site da Vale Engenharia.\n\n" +
         "*Nome:* " + d.nome + "\n" +
         (d.empresa ? "*Empresa/Fazenda:* " + d.empresa + "\n" : "") +
         "*Telefone:* " + d.telefone + "\n" +

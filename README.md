@@ -1,4 +1,4 @@
-# Site LJ Serviços
+# Site Vale Engenharia e Manutenção Industrial
 
 Landing page estática (HTML, CSS e JavaScript puros) para captação de clientes nos segmentos de
 engenharia civil, usina solar, manutenção elétrica, fabricação, montagem e manutenção industrial
@@ -45,7 +45,7 @@ reservado no lugar, sem quebrar o layout.
 
 | Arquivo | Onde aparece | Sugestão |
 |---|---|---|
-| `assets/img/logo-lj.svg` | Cabeçalho e rodapé | Símbolo da marca em vetor. O nome é escrito em texto ao lado, em `index.html`. |
+| `assets/img/logo-vale.svg` | Cabeçalho e rodapé | Símbolo da marca em vetor. O nome é escrito em texto ao lado, em `index.html`. |
 | `assets/img/hero.jpg` | Fundo da primeira dobra | Foto panorâmica de armazém, silos ou equipe em campo (horizontal, 1920px). |
 | `assets/img/equipe.jpg` | Seção "Quem somos" | Equipe ou o líder técnico em campo (vertical ou quadrada). |
 | `assets/img/servicos/montagem-silos.jpg` | Card do serviço | Silos, unidade armazenadora, montagem. |
@@ -72,6 +72,6 @@ serviço apontando para este repositório; a porta é lida da variável `PORT` a
 ## Cartão digital
 
 - Página: `cartao.html` (link em `/cartao.html` no site publicado), com botões de WhatsApp, ligar, e-mail,
-  salvar contato (arquivo `assets/lj-servicos.vcf`), mapa e compartilhar.
-- Imagem para enviar no WhatsApp: `assets/brand/cartao-lj-servicos.png` (1080x1350), com QR code para a página.
-- Para alterar telefone, e-mail ou endereço do cartão, edite `cartao.html` e `assets/lj-servicos.vcf`.
+  salvar contato (arquivo `assets/vale-engenharia.vcf`), mapa e compartilhar.
+- Imagem para enviar no WhatsApp: `assets/brand/cartao-vale-engenharia.png` (1080x1350), com QR code para a página.
+- Para alterar telefone, e-mail ou endereço do cartão, edite `cartao.html` e `assets/vale-engenharia.vcf`.
