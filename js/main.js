@@ -4,9 +4,9 @@
    ========================================================= */
 const CONFIG = {
   // Número com DDI + DDD, só dígitos. Ex.: 5566999998888
-  whatsappNumber: "5500000000000",
+  whatsappNumber: "5577998755764",
   // Como o número aparece no site
-  whatsappDisplay: "(00) 00000-0000",
+  whatsappDisplay: "(77) 99875-5764",
   email: "contato@valleteclab.com.br",
   region: "Atendemos todo o Brasil",
   defaultMessage: "Olá! Vim pelo site da Valleteclab e gostaria de solicitar um orçamento."
