@@ -1,5 +1,5 @@
 /* =========================================================
-   Valleteclab - Landing Page
+   LJ Serviços - Landing Page
    Edite os dados de contato aqui:
    ========================================================= */
 const CONFIG = {
@@ -7,9 +7,14 @@ const CONFIG = {
   whatsappNumber: "5577998755764",
   // Como o número aparece no site
   whatsappDisplay: "(77) 99875-5764",
+  // Telefone secundário (só dígitos para o link e versão formatada)
+  phone2Number: "5577998671802",
+  phone2Display: "(77) 99867-1802",
   email: "loamesilva@valleteclab.com.br",
-  region: "Atendemos todo o Brasil",
-  defaultMessage: "Olá! Vim pelo site da Valleteclab e gostaria de solicitar um orçamento."
+  owner: "Francisco Almir Vale de Araújo",
+  address: "Rua Cleriston Andrade, 1189, Sala 210, Luís Eduardo Magalhães - BA",
+  region: "Base em Luís Eduardo Magalhães - BA. Atendemos todo o Brasil",
+  defaultMessage: "Olá! Vim pelo site da LJ Serviços e gostaria de solicitar um orçamento."
 };
 
 (function () {
@@ -30,6 +35,12 @@ const CONFIG = {
     el.setAttribute("href", "mailto:" + CONFIG.email);
   });
   document.querySelectorAll(".js-region").forEach((el) => (el.textContent = CONFIG.region));
+  document.querySelectorAll(".js-owner").forEach((el) => (el.textContent = CONFIG.owner));
+  document.querySelectorAll(".js-address").forEach((el) => (el.textContent = CONFIG.address));
+  document.querySelectorAll(".js-phone2").forEach((el) => {
+    el.textContent = CONFIG.phone2Display;
+    el.setAttribute("href", "tel:+" + CONFIG.phone2Number);
+  });
 
   /* ---- Carrossel de clientes: duplica os itens para o loop ser contínuo ---- */
   document.querySelectorAll(".marquee__track").forEach((track) => {
@@ -99,7 +110,7 @@ const CONFIG = {
       }
       const d = Object.fromEntries(new FormData(form).entries());
       const msg =
-        "Olá! Vim pelo site da Valleteclab.\n\n" +
+        "Olá! Vim pelo site da LJ Serviços.\n\n" +
         "*Nome:* " + d.nome + "\n" +
         (d.empresa ? "*Empresa/Fazenda:* " + d.empresa + "\n" : "") +
         "*Telefone:* " + d.telefone + "\n" +

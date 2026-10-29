@@ -1,4 +1,4 @@
-# Site Valleteclab
+# Site LJ Serviços
 
 Landing page estática (HTML, CSS e JavaScript puros) para captação de clientes nos segmentos de
 engenharia civil, usina solar, manutenção elétrica, fabricação, montagem e manutenção industrial
@@ -22,8 +22,11 @@ Edite o bloco `CONFIG` no início de `js/main.js`:
 
 ```js
 const CONFIG = {
-  whatsappNumber: "5566999998888",     // DDI + DDD + número, só dígitos
-  whatsappDisplay: "(66) 99999-8888",  // como aparece no site
+  whatsappNumber: "5577998755764",     // DDI + DDD + número, só dígitos
+  whatsappDisplay: "(77) 99875-5764",  // como aparece no site
+  phone2Number: "5577998671802",       // telefone secundário
+  owner: "Francisco Almir Vale de Araújo",
+  address: "Rua Cleriston Andrade, 1189, Sala 210, Luís Eduardo Magalhães - BA",
   email: "loamesilva@valleteclab.com.br",
   region: "Atendemos todo o Brasil",
   ...
@@ -42,7 +45,7 @@ reservado no lugar, sem quebrar o layout.
 
 | Arquivo | Onde aparece | Sugestão |
 |---|---|---|
-| `assets/img/logo-white-header.png` | Cabeçalho e rodapé | Logo em branco para fundo escuro. `logo.png` é a versão original e `logo-white.png` a branca em alta resolução. |
+| `assets/img/logo-lj.svg` | Cabeçalho e rodapé | Símbolo da marca em vetor. O nome é escrito em texto ao lado, em `index.html`. |
 | `assets/img/hero.jpg` | Fundo da primeira dobra | Foto panorâmica de armazém, silos ou equipe em campo (horizontal, 1920px). |
 | `assets/img/equipe.jpg` | Seção "Quem somos" | Equipe ou o líder técnico em campo (vertical ou quadrada). |
 | `assets/img/servicos/montagem-silos.jpg` | Card do serviço | Silos, unidade armazenadora, montagem. |

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124" role="img" aria-label="LJ Serviços">
+  <!-- engrenagem -->
+  <path d="M105.5 56.0 L105.4 58.1 L111.8 60.5 L111.3 64.2 L104.5 64.8 L101.6 73.1 L100.6 75.0 L105.3 79.9 L103.2 83.0 L96.9 80.6 L90.6 86.9 L88.9 88.2 L91.0 94.6 L87.8 96.5 L83.1 91.6 L74.8 94.5 L72.7 94.9 L71.8 101.6 L68.1 102.0 L66.0 95.5 L57.2 94.5 L55.2 94.0 L51.4 99.6 L47.9 98.3 L48.9 91.6 L41.4 86.9 L39.7 85.5 L33.9 89.0 L31.4 86.3 L35.1 80.6 L30.4 73.1 L29.5 71.2 L22.8 71.8 L21.7 68.2 L27.5 64.8 L26.5 56.0 L26.6 53.9 L20.2 51.5 L20.7 47.8 L27.5 47.2 L30.4 38.9 L31.4 37.0 L26.7 32.1 L28.8 29.0 L35.1 31.4 L41.4 25.1 L43.1 23.8 L41.0 17.4 L44.2 15.5 L48.9 20.4 L57.2 17.5 L59.3 17.1 L60.2 10.4 L63.9 10.0 L66.0 16.5 L74.8 17.5 L76.8 18.0 L80.6 12.4 L84.1 13.7 L83.1 20.4 L90.6 25.1 L92.3 26.5 L98.1 23.0 L100.6 25.7 L96.9 31.4 L101.6 38.9 L102.5 40.8 L109.2 40.2 L110.3 43.8 L104.5 47.2Z M97 56 A31 31 0 1 0 35 56 A31 31 0 1 0 97 56Z" fill="#1f4d2e" fill-rule="evenodd"/>
+  <!-- silo -->
+  <path d="M28 48 q13 -16 26 0 v46 h-26z" fill="#2f7d4a"/>
+  <path d="M28 48 q13 -16 26 0" fill="#3f9b5b"/>
+  <path d="M35 50v44M41 47v47M47 50v44" stroke="#1f4d2e" stroke-width="2" opacity=".55"/>
+  <path d="M28 62h26M28 76h26" stroke="#1f4d2e" stroke-width="1.5" opacity=".45"/>
+  <!-- prédio industrial -->
+  <path d="M58 62 h20 v32 h-20z" fill="#e9b949"/>
+  <path d="M58 62 l10 -11 l10 11z" fill="#d7a234"/>
+  <g fill="#1f4d2e"><rect x="62" y="67" width="4" height="5"/><rect x="70" y="67" width="4" height="5"/><rect x="62" y="76" width="4" height="5"/><rect x="70" y="76" width="4" height="5"/><rect x="65" y="85" width="6" height="9"/></g>
+  <!-- folha -->
+  <path d="M84 96 c0 -20 13 -31 31 -31 c0 20 -11 31 -31 31z" fill="#3f9b5b"/>
+  <path d="M86 94 c7 -11 15 -19 26 -26" stroke="#1f4d2e" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <!-- solo e campo -->
+  <path d="M16 96 h72" stroke="#1f4d2e" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M22 106 q20 -7 40 0 t40 0" stroke="#3f9b5b" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
