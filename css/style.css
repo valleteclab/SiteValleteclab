@@ -183,6 +183,19 @@ p { margin: 0 0 1rem; }
 .service--cta p { color: var(--c-text-inv-muted); flex: 0; }
 .service--cta .btn { align-self: flex-start; margin-top: .6rem; }
 
+/* ---------- Fluxo de beneficiamento ---------- */
+.flow { background: var(--c-bg); color: #fff; position: relative; overflow: hidden; }
+.flow::before { content: ""; position: absolute; inset: 0; opacity: .05; background-image: linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px); background-size: 48px 48px; }
+.flow .container { position: relative; }
+.flow .section__head p { color: var(--c-text-inv-muted); }
+.flow__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.flow__grid li { background: rgba(255,255,255,.04); border: 1px solid var(--c-line-dark); border-radius: var(--radius); padding: 1.3rem 1.3rem 1.4rem; transition: .2s; }
+.flow__grid li:hover { background: rgba(255,255,255,.07); border-color: rgba(246,199,0,.5); transform: translateY(-3px); }
+.flow__n { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; color: var(--c-primary); letter-spacing: .05em; }
+.flow__grid h3 { color: #fff; font-size: 1.25rem; margin: .35rem 0 .3rem; }
+.flow__grid p { color: var(--c-text-inv-muted); font-size: .9rem; margin: 0; }
+.flow__cta { text-align: center; margin-top: 2.4rem; }
+
 /* ---------- Segmentos ---------- */
 .segments { background: var(--c-surface-2); }
 .segments__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
@@ -307,6 +320,7 @@ p { margin: 0 0 1rem; }
 @media (max-width: 1024px) {
   .services__grid { grid-template-columns: repeat(2, 1fr); }
   .segments__grid { grid-template-columns: repeat(3, 1fr); }
+  .flow__grid { grid-template-columns: repeat(3, 1fr); }
   .process__steps { grid-template-columns: repeat(2, 1fr); }
   .portfolio__grid { grid-template-columns: repeat(3, 1fr); }
   .portfolio__item:nth-child(1), .portfolio__item:nth-child(6), .portfolio__item:nth-child(7), .portfolio__item:nth-child(12) { grid-column: span 1; aspect-ratio: 1/1; }
@@ -329,6 +343,7 @@ p { margin: 0 0 1rem; }
 }
 @media (max-width: 640px) {
   .services__grid, .segments__grid, .process__steps { grid-template-columns: 1fr; }
+  .flow__grid { grid-template-columns: 1fr 1fr; }
   .service--cta .service__body { grid-template-columns: 1fr; }
   .service--cta .btn { grid-column: 1; grid-row: auto; margin-top: 1rem; justify-self: start; }
   .portfolio__grid { grid-template-columns: repeat(2, 1fr); }
