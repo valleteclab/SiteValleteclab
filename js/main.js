@@ -25,7 +25,7 @@ const CONFIG = {
 
   /* ---- Links de WhatsApp / e-mail / região ---- */
   document.querySelectorAll(".js-whatsapp").forEach((el) => {
-    el.setAttribute("href", waLink());
+    el.setAttribute("href", waLink(el.dataset.message));
     el.setAttribute("target", "_blank");
     el.setAttribute("rel", "noopener");
   });
@@ -121,7 +121,7 @@ const CONFIG = {
   }
 
   /* ---- Animação de entrada ---- */
-  const targets = document.querySelectorAll(".service, .segment, .process__steps li, .portfolio__item, .about__media, .about__body, .contact__form, .contact__info");
+  const targets = document.querySelectorAll(".service, .staff, .segment, .process__steps li, .portfolio__item, .about__media, .about__body, .contact__form, .contact__info");
   targets.forEach((t) => t.classList.add("reveal"));
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(
