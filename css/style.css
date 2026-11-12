@@ -384,7 +384,7 @@ p { margin: 0 0 1rem; }
   .portfolio__item:nth-child(1), .portfolio__item:nth-child(6), .portfolio__item:nth-child(7) { grid-column: span 1; aspect-ratio: 1/1; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .nav {
     position: fixed; top: var(--header-h); left: 0; right: 0;
     flex-direction: column; gap: 0; background: var(--c-bg); border-bottom: 1px solid var(--c-line-dark);
