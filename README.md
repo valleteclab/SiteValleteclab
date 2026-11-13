@@ -77,3 +77,10 @@ serviço apontando para este repositório; a porta é lida da variável `PORT` a
   salvar contato (arquivo `assets/vale-engenharia.vcf`), mapa e compartilhar.
 - Imagem para enviar no WhatsApp: `assets/brand/cartao-vale-engenharia.png` (1080x1350), com QR code para a página.
 - Para alterar telefone, e-mail ou endereço do cartão, edite `cartao.html` e `assets/vale-engenharia.vcf`.
+
+### Cache (Cloudflare)
+
+O domínio passa pelo proxy da Cloudflare. O `Caddyfile` manda `Cache-Control: no-cache` para HTML, CSS e JS,
+e os links de `css/style.css` e `js/main.js` em `index.html` levam um `?v=...` que deve ser trocado a cada
+publicação que altere esses arquivos (qualquer valor novo serve). Se uma mudança não aparecer, limpe o cache
+no painel da Cloudflare em Caching, Purge Everything.
