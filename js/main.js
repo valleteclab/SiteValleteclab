@@ -14,6 +14,11 @@ const CONFIG = {
   owner: "Francisco Almir Vale de Araújo",
   address: "Rua Cleriston Andrade, 1189, Sala 210, Luís Eduardo Magalhães - BA",
   region: "Base em Luís Eduardo Magalhães - BA. Atendemos todo o Brasil",
+  // Dados legais exibidos no rodapé
+  legalName: "Valleteclab Empreendimentos Ltda",
+  cnpj: "15.130.181/0001-48",
+  creaNumber: "",          // número do registro da empresa no CREA-BA (ex.: "123456"); vazio = só "Empresa registrada no CREA-BA"
+  responsavelTecnico: "",  // ex.: "Responsável técnico: Fulano de Tal, Eng. Civil, CREA-BA 0000000000"
   defaultMessage: "Olá! Vim pelo site da Vale Engenharia e gostaria de solicitar um orçamento."
 };
 
@@ -52,6 +57,12 @@ const CONFIG = {
       track.appendChild(clone);
     });
   });
+
+  /* ---- Dados legais no rodapé ---- */
+  document.querySelectorAll(".js-legal-name").forEach((el) => (el.textContent = CONFIG.legalName));
+  document.querySelectorAll(".js-cnpj").forEach((el) => (el.textContent = CONFIG.cnpj));
+  document.querySelectorAll(".js-crea-number").forEach((el) => (el.textContent = CONFIG.creaNumber ? " nº " + CONFIG.creaNumber : ""));
+  document.querySelectorAll(".js-rt").forEach((el) => (el.textContent = CONFIG.responsavelTecnico ? " \u2022 " + CONFIG.responsavelTecnico : ""));
 
   /* ---- Ano no rodapé ---- */
   const year = document.getElementById("year");

@@ -27,6 +27,8 @@ const CONFIG = {
   phone2Number: "5577998671802",       // telefone secundário
   owner: "Francisco Almir Vale de Araújo",
   address: "Rua Cleriston Andrade, 1189, Sala 210, Luís Eduardo Magalhães - BA",
+  creaNumber: "",                      // número do registro no CREA-BA, aparece no rodapé quando preenchido
+  responsavelTecnico: "",              // texto do responsável técnico no rodapé (opcional)
   email: "loamesilva@valleteclab.com.br",
   region: "Atendemos todo o Brasil",
   ...

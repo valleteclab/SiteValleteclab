@@ -347,6 +347,8 @@ p { margin: 0 0 1rem; }
 .footer__col h4 { color: #fff; font-size: 1.1rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .4rem; }
 .footer__col a:hover { color: var(--c-primary); }
 .footer__bottom { padding: 20px 0; font-size: .85rem; }
+.footer__legal { margin: 0 0 .5rem; font-size: .85rem; color: var(--c-text-inv-muted); line-height: 1.6; }
+.footer__crea { color: #fff; font-weight: 600; }
 
 /* ---------- WhatsApp flutuante ---------- */
 .whatsapp-float {
