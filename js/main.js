@@ -17,8 +17,8 @@ const CONFIG = {
   // Dados legais exibidos no rodapé
   legalName: "Valleteclab Empreendimentos Ltda",
   cnpj: "15.130.181/0001-48",
-  creaNumber: "",          // número do registro da empresa no CREA-BA (ex.: "123456"); vazio = só "Empresa registrada no CREA-BA"
-  responsavelTecnico: "",  // ex.: "Responsável técnico: Fulano de Tal, Eng. Civil, CREA-BA 0000000000"
+  creaNumber: "0010435255", // registro nacional da empresa no CREA-BA; vazio = só "Empresa registrada no CREA-BA"
+  responsavelTecnico: "Responsável técnico: Thales Eduardo Almeida Brito, Eng. Civil, CREA-SE 271580192-0, visto CREA-BA 3000043898",
   defaultMessage: "Olá! Vim pelo site da Vale Engenharia e gostaria de solicitar um orçamento."
 };
 
