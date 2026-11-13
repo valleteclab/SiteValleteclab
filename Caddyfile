@@ -1,0 +1,15 @@
+# Servidor estático do site. A porta vem de $PORT (Railway); fora dele usa 8080.
+:{$PORT:8080} {
+	root * /srv
+	encode gzip
+	file_server
+
+	# HTML, CSS e JS: sempre revalidar, para publicações aparecerem na hora
+	# mesmo atrás do proxy da Cloudflare.
+	@code path /*.html /css/* /js/* /
+	header @code Cache-Control "no-cache"
+
+	# Imagens e demais arquivos: cache de 1 hora.
+	@static path /assets/*
+	header @static Cache-Control "public, max-age=3600"
+}
