@@ -1,0 +1,2 @@
+# Cache do CLI da Cloudflare (cf), não faz parte do site
+.cloudflare/
